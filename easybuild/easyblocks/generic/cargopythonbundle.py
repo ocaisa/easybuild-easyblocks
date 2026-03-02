@@ -45,7 +45,7 @@ class CargoPythonBundle(PythonBundle, Cargo):  # PythonBundle must come first to
         """Define extra easyconfig parameters specific to Cargo"""
         extra_vars = PythonBundle.extra_options(extra_vars)
         extra_vars = Cargo.extra_options(extra_vars)  # not all extra options here will used here
-        extra_vars['default_easyblock'][0] = 'CargoPythonPackage'
+        # extra_vars['default_easyblock'][0] = 'CargoPythonPackage'
 
         return extra_vars
 
